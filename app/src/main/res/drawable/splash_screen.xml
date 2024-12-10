@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    tools:ignore="UnusedAttribute"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/white"
+        android:gravity="center"
+        />
+    <item android:drawable="@drawable/icon_emergency"
+        android:gravity="center"
+        android:width="100dp"
+        android:height="100dp" />
+</layer-list>

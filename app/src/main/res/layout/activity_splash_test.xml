@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashTest">
+
+    <View
+        android:id="@+id/dummyView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/dummyTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/dummyView"
+        android:layout_marginTop="70dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Emergency Services" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dummyCopyright"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:indeterminate="true"
+        android:layout_marginHorizontal="32dp"
+
+        android:indeterminateTint="@color/deep_green"/>
+
+    <TextView
+        android:id="@+id/dummyCopyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Developed By Taspi©️ 2024"
+        android:textSize="12dp" />
+</RelativeLayout>

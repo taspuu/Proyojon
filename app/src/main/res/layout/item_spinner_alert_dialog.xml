@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- spinner_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A15292B">
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:padding="16dp"
+        android:textColor="@color/deep_green"
+        android:textSize="16sp" />
+</LinearLayout>

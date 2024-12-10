@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:id="@+id/rlCheckPassCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#F2000000"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tvResultPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_passcode"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="#F00" />
+
+        <EditText
+            android:id="@+id/et_passcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="64dp"
+            android:backgroundTint="@color/deep_green"
+            android:hint="Enter passcode"
+            android:inputType="numberPassword"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/deep_green" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/titleBarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="16dp"
+                    android:text="Add Data to database"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:alpha="0.5"
+                android:background="#FF0000"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Spinner for service type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Service Type:" />
+
+            <Spinner
+                android:id="@+id/spinnerServiceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <!-- EditText for person name -->
+            <EditText
+                android:id="@+id/editTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Person Name" />
+
+            <!-- EditText for organization name -->
+            <EditText
+                android:id="@+id/editTextOrganizationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Organization Name" />
+
+            <!-- EditText for service city -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Service City:" />
+
+            <Spinner
+                android:id="@+id/spinnerDistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <!-- EditText for service area -->
+            <EditText
+                android:id="@+id/editTextServiceArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Service Area/Address" />
+
+            <!-- EditText for person specialization -->
+            <TextView
+                android:id="@+id/tvPersonSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Person Specialization"/>
+
+            <Spinner
+                android:id="@+id/spinnerPersonSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" /> <!-- Initially hidden -->
+
+
+            <!-- EditText for phone number -->
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone" />
+
+            <!-- Button to submit data -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ED60DC41"
+                android:backgroundTint="#5BBD41"
+                android:text="Submit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <ListView
+                android:id="@+id/listViewUnverified"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="16dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+
+
+            <!-- Progress bar for loading state -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

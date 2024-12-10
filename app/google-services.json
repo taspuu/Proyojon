@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "927633527652",
+    "firebase_url": "https://emergency-services-753c4-default-rtdb.firebaseio.com",
+    "project_id": "emergency-services-753c4",
+    "storage_bucket": "emergency-services-753c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927633527652:android:3cd776da4111cd152e6071",
+        "android_client_info": {
+          "package_name": "bd.com.ashfaq.apps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzpKnPI75w8fdjpuUc3Zct4mCjEfNelJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
